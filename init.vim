@@ -25,6 +25,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'akinsho/bufferline.nvim', {'tag': 'v2.8.2'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
@@ -195,7 +196,7 @@ EOF
 " nvim-treesitter
 lua << EOF
 require'nvim-treesitter.configs'.setup{
-	ensure_installed = {"java"},
+	ensure_installed = {"java", "c_sharp"},
 	highlight = {
 		enable = true,
 	},
@@ -208,7 +209,8 @@ nnoremap <S-H> <C-w>h
 nnoremap <S-L> <C-w>l
 nnoremap <S-U> <C-u>
 nnoremap <S-D> <C-d>
+tnoremap <Esc> <C-\><C-n>
 
-colorscheme xcodedark
+colorscheme codedark
 
 
