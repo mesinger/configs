@@ -9,8 +9,8 @@ map \ren <Action>(RenameElement)
 map \gen <Action>(Generate)
 
 map \ra <Action>(Stop) <Action>(Run)
-map \sa <Action>(Stop)
-map \da <Action>(Debug)
+map \s <Action>(Stop)
+map \d <Action>(Debug)
 map \b <Action>(ToggleLineBreakpoint)
 
 map \e <Action>(ShowErrorDescription)
