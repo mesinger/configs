@@ -15,6 +15,7 @@ Plug 'akinsho/bufferline.nvim', {'tag': 'v2.8.2'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tomasiser/vim-code-dark'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 
