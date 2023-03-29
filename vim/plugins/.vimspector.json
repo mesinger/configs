@@ -1,0 +1,20 @@
+{
+  "configurations": {
+    "Run Node.js File": {
+      "adapter": "vscode-node",
+      "configuration": {
+        "type": "node",
+        "request": "launch",
+        "protocol": "auto",
+        "console": "integratedTerminal",
+        "runtimeArgs": [
+            "-r",
+            "ts-node/register"
+        ],
+        "args": [
+            "${workspaceFolder}/generator.ts"
+        ]
+      }
+    }
+  }
+}

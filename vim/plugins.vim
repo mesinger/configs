@@ -16,6 +16,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tomasiser/vim-code-dark'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'puremourning/vimspector'
+let g:vimspector_enable_mappings = 'HUMAN'
 
 call plug#end()
 
