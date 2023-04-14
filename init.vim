@@ -7,5 +7,5 @@ if has('ide')
 else
   source ~/.config/nvim/vim/plugins.vim
   source ~/.config/nvim/vim/keymap.vim
-  source ~/.config/nvim/vim/visual.vim
+  colorscheme codedark
 endif

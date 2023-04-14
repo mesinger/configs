@@ -8,6 +8,11 @@ Plug 'tomasiser/vim-code-dark'
 " editor
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'majutsushi/tagbar'
+Plug 'vim-autoformat/vim-autoformat'
 
 " syntax
 Plug 'majutsushi/tagbar'
@@ -16,7 +21,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " debug
 Plug 'puremourning/vimspector'
-let g:vimspector_enable_mappings = 'HUMAN'
 
 call plug#end()
 
