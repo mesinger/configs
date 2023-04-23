@@ -1,0 +1,19 @@
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - h : yabai -m window --focus west
+ctrl - l : yabai -m window --focus east
+
+ctrl + shift - j : yabai -m window --swap south
+ctrl + shift - k : yabai -m window --swap north
+ctrl + shift - h : yabai -m window --swap west
+ctrl + shift - l : yabai -m window --swap east
+ctrl + shift - o : yabai -m space --rotate 270
+
+ctrl + shift - 1 : yabai -m window --space 1
+ctrl + shift - 2 : yabai -m window --space 2
+ctrl + shift - 3 : yabai -m window --space 3
+
+ctrl - v : yabai -m window --toggle split
+
+ctrl + shift - r : yabai -m space --balance
+
