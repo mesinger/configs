@@ -14,3 +14,4 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Outlook$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
+yabai -m rule --add app="^Microsoft Teams$" manage=off
