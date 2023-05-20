@@ -25,5 +25,6 @@ Plug 'puremourning/vimspector'
 call plug#end()
 
 source ~/.config/nvim/vim/plugins/coc.vim
+source ~/.config/nvim/vim/plugins/vim-airline.vim
 " source ~/.config/nvim/vim/plugins/treesitter.vim
 
