@@ -2,6 +2,9 @@
 
 !.gitignore
 
+!my-zsh/
 !nvim/
 !yabai/
 !skhd/
+
+*/.DS_Store
