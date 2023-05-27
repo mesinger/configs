@@ -1,7 +1,7 @@
 let mapleader = " "
 
-nmap <S-j> :bn<CR>
-nmap <S-k> :bp<CR>
+nmap <S-j> :bp<CR>
+nmap <S-k> :bn<CR>
 nmap <leader>fmt :Autoformat<CR>
 
 " vimspector
