@@ -31,11 +31,14 @@ skhd --start-service
 install_if_not_present "chroma" "brew install chroma" # required for colorize plugin
 install_if_not_present "http" "brew install httpie"
 install_if_not_present "nvim" "brew install neovim"
+install_if_not_present "fzf" "brew install fzf"
 
 echo 'Bootstrap java'
 install_if_not_present "jenv" "brew install jenv"
 brew install openjdk@17
 jenv add /opt/homebrew/opt/openjdk@17
+install_if_not_present "mvn" "brew install maven"
+install_if_not_present "gradle" "brew install gradle"
 
 echo 'Bootstrap node'
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
