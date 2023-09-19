@@ -9,7 +9,11 @@ yabai -m config window_gap     5
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Outlook$" manage=off
+yabai -m rule --add app="^Microsoft Outlook$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
 yabai -m rule --add app="^Microsoft Teams$" manage=off
+yabai -m rule --add app="^Docker Desktop$" manage=off
+yabai -m rule --add app="^TextEdit$" manage=off
+yabai -m rule --add app="^Microsoft Excel$" manage=off
+yabai -m rule --add app="^Postman$" manage=off

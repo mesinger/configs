@@ -11,8 +11,15 @@ nmap <F8> <Plug>VimspectorStepOver<CR>
 nmap <F9> <Plug>VimspectorStepInto<CR>
 
 " fzf
-nmap <leader>sf :Files<CR>
+nmap <leader>sf :GFiles<CR>
 nmap <leader>sb :Buffers<CR>
+
+" coc
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <leader> gg  <Plug>(coc-fix-current)
 
 " augroup VimspectorEvents
 "   au!
