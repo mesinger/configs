@@ -2,7 +2,7 @@
 
 !.gitignore
 
-!my-zsh/
+!shell/
 !nvim/
 !yabai/
 !skhd/

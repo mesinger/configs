@@ -8,7 +8,7 @@ echo 'Bootstraping your machine'
 cd $CONFIG
 git pull &> /dev/null
 
-ln -sf $CONFIG/my-zsh/.zshrc $HOME/.zshrc
+ln -sf $CONFIG/shell/zsh/.zshrc $HOME/.zshrc
 
 install_if_not_present() {
     local command_name=$1
