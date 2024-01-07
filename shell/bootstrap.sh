@@ -16,6 +16,8 @@ install_if_not_present "bash" "brew install bash"
 
 install_if_not_present "yabai" "brew install koekeishiya/formulae/yabai"
 install_if_not_present "skhd" "brew install koekeishiya/formulae/skhd"
+yabai --start-service
+skhd --start-service
 
 install_if_not_present "http" "brew install httpie"
 install_if_not_present "nvim" "brew install neovim"
