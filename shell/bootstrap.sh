@@ -14,6 +14,9 @@ install_if_not_present "brew" "/bin/sh -c '$(curl -fsSL https://raw.githubuserco
 install_if_not_present "fish" "brew install fish"
 install_if_not_present "bash" "brew install bash"
 
+brew install --cask eloston-chromium
+brew install --cask vscodium
+
 install_if_not_present "yabai" "brew install koekeishiya/formulae/yabai"
 install_if_not_present "skhd" "brew install koekeishiya/formulae/skhd"
 yabai --start-service
