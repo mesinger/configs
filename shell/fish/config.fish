@@ -8,4 +8,5 @@ source $BASE/general.sh
 source $BASE/git.sh
 source $BASE/containers.sh
 source $BASE/java.sh
+source $BASE/rust.fish
 source $BASE/squer.sh
