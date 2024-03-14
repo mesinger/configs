@@ -24,3 +24,15 @@ function nvm
     set -l arg $argv
     bass source ~/.nvm/nvm.sh --no-use ';' nvm $arg
 end
+
+function ksecret
+    if test (count $argv) -ne 2
+        echo "Usage: ksecret <namespace> <secret-name>"
+        return 1
+    end
+
+    set namespace $argv[1]
+    set secret_name $argv[2]
+
+    kubectl get secret $secret_name -n $namespace --template={{.data}} -o json | jq '.data'
+end

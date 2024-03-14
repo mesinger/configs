@@ -23,7 +23,7 @@ yabai --start-service
 skhd --start-service
 
 install_if_not_present "http" "brew install httpie"
-install_if_not_present "nvim" "brew install neovim"
+install_if_not_present "nvim" "brew install neovim && sh -c 'curl -fLo \"{$\{XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
 install_if_not_present "fzf" "brew install fzf"
 install_if_not_present "ddgr" "brew install ddgr"
 install_if_not_present "bartib" "brew install bartib"
