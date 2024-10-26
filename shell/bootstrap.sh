@@ -14,13 +14,15 @@ install_if_not_present "brew" "/bin/sh -c '$(curl -fsSL https://raw.githubuserco
 install_if_not_present "fish" "brew install fish"
 install_if_not_present "bash" "brew install bash"
 
-brew install --cask eloston-chromium
 brew install --cask vscodium
 
 install_if_not_present "yabai" "brew install koekeishiya/formulae/yabai"
 install_if_not_present "skhd" "brew install koekeishiya/formulae/skhd"
 yabai --start-service
 skhd --start-service
+
+brew install "font-hack-nerd-font"
+brew install "font-inconsolata-go-nerd-font"
 
 install_if_not_present "http" "brew install httpie"
 install_if_not_present "nvim" "brew install neovim && sh -c 'curl -fLo \"{$\{XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
