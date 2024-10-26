@@ -19,7 +19,6 @@ ctrl + shift - 6 : yabai -m window --space 6
 ctrl + shift + alt - 1 : yabai -m window --display 1
 ctrl + shift + alt - 2 : yabai -m window --display 2
 
-ctrl - v : yabai -m window --toggle split
 
 ctrl + shift - r : yabai -m space --balance
 

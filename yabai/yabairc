@@ -1,4 +1,5 @@
 yabai -m config layout bsp
+yabai -m config debug_output on
 
 yabai -m config top_padding    5
 yabai -m config bottom_padding 5
@@ -12,9 +13,10 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Microsoft Outlook$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
 yabai -m rule --add app="^Reminders$" manage=off
-yabai -m rule --add app="^Microsoft Teams classic$" manage=off
+yabai -m rule --add app="^Microsoft Teams$" manage=off
 yabai -m rule --add app="^Docker Desktop$" manage=off
 yabai -m rule --add app="^TextEdit$" manage=off
 yabai -m rule --add app="^Microsoft Excel$" manage=off
 yabai -m rule --add app="^Postman$" manage=off
 yabai -m rule --add app="^Calendar$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
