@@ -4,6 +4,9 @@ nmap <S-j> :bp<CR>
 nmap <S-k> :bn<CR>
 nmap <leader>fmt :Autoformat<CR>
 
+" nerdtree
+nnoremap <leader>n :NERDTreeFocus<CR>
+
 " vimspector
 nmap <leader>bp <Plug>VimspectorToggleBreakpoint<CR>
 nmap <leader>db <Plug>VimspectorContinue<CR>
