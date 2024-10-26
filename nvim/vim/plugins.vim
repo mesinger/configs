@@ -32,6 +32,8 @@ call plug#end()
 " coc
 source ~/.config/nvim/vim/coc.vim
 
+let g:vimspector_install_gadgets = [ 'vscode-js-debug' ]
+
 " airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
@@ -47,6 +49,7 @@ require'nvim-treesitter.configs'.setup{
 EOF
 
 " autoformat
+au BufWrite * :Autoformat
 let g:formatdef_latexindent = '"latexindent -"'
 
 " nerdtree
