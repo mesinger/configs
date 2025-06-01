@@ -1,3 +1,5 @@
+git config --global alias.lol "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 alias g 'git'
 alias gst 'git status'
 alias gp 'git push'
