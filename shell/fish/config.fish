@@ -9,4 +9,7 @@ source $BASE/git.sh
 source $BASE/containers.sh
 source $BASE/java.sh
 source $BASE/rust.fish
+source $BASE/node.sh
 source $BASE/squer.sh
+
+source $BASE/greeting.sh
