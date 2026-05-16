@@ -32,19 +32,23 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 install_if_not_present "http" "brew install httpie"
+install_if_not_present "wget" "brew install wget"
 install_if_not_present "fzf" "brew install fzf"
 install_if_not_present "ddgr" "brew install ddgr"
 install_if_not_present "ffmpeg" "brew install ffmpeg"
 install_if_not_present "bat" "brew install ffmpeg"
 install_if_not_present "tlrc" "brew install ffmpeg"
+install_if_not_present "cloc" "brew install cloc"
 
 install_if_not_present "jenv" "brew install jenv"
 install_if_not_present "mvn" "brew install maven"
 install_if_not_present "gradle" "brew install gradle"
 
 brew install -q openjdk@21
+brew install -q openjdk@25
 mkdir ~/.jenv/versions/
 jenv add /opt/homebrew/opt/openjdk@21
+jenv add /opt/homebrew/opt/openjdk@25
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -53,7 +57,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 nvm install --lts
 
+brew install dotnet
+
 source ~/.config/shell/_base/update.sh
 
+echo "Hier noch hilfreiche Info Euer Durchlaucht"
 echo "Disable iterm selection in Settings > General > Selection"
 echo "Set default shell in iterm / terminal settings"
+echo "Set keyboard to Unicode Hex Input to make shortcuts work"

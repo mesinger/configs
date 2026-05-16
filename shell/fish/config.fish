@@ -13,3 +13,6 @@ source $BASE/node.sh
 source $BASE/squer.sh
 
 source $BASE/greeting.sh
+
+# Created by `pipx` on 2026-03-08 16:55:29
+set PATH $PATH /Users/rico/.local/bin
