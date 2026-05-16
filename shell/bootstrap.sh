@@ -18,6 +18,7 @@ curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install 
 omf install bass
 
 brew install --cask vscodium
+brew install --cask ghostty
 
 install_if_not_present "yabai" "brew install koekeishiya/formulae/yabai"
 install_if_not_present "skhd" "brew install koekeishiya/formulae/skhd"
@@ -36,9 +37,10 @@ install_if_not_present "wget" "brew install wget"
 install_if_not_present "fzf" "brew install fzf"
 install_if_not_present "ddgr" "brew install ddgr"
 install_if_not_present "ffmpeg" "brew install ffmpeg"
-install_if_not_present "bat" "brew install ffmpeg"
-install_if_not_present "tlrc" "brew install ffmpeg"
+install_if_not_present "bat" "brew install bat"
+install_if_not_present "tlrd" "brew install tlrc"
 install_if_not_present "cloc" "brew install cloc"
+install_if_not_present "tmux" "brew install tmux"
 
 install_if_not_present "jenv" "brew install jenv"
 install_if_not_present "mvn" "brew install maven"
