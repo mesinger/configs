@@ -7,5 +7,7 @@
 !yabai/
 !skhd/
 !alacritty/
+!ghostty/
+!.tmux.conf
 
 */.DS_Store
