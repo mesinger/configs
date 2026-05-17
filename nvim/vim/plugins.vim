@@ -52,7 +52,17 @@ EOF
 au BufWrite * :Autoformat
 let g:formatdef_latexindent = '"latexindent -"'
 
-" nerdtree
+" nerdtree - latex ignores
+let g:NERDTreeIgnore = [
+    \ '\.aux$', '\.bbl$', '\.bcf$', '\.blg$', '\.fdb_latexmk$', '\.fls$',
+    \ '\.lof$', '\.log$', '\.lot$', '\.out$', '\.run\.xml$', '\.synctex\.gz$',
+    \ '\.toc$', '\.xdv$', '\.pdf$', '\.dvi$', '\.ps$',
+    \ '\.idx$', '\.ilg$', '\.ind$', '\.ist$',
+    \ '\.glo$', '\.gls$', '\.glg$', '\.acn$', '\.acr$', '\.alg$',
+    \ '\.nav$', '\.snm$', '\.vrb$',
+    \ '\.maf$', '\.mtc$', '\.mtc0$',
+    \ '_minted-.*[[dir]]'
+    \ ]
 " Start NERDTree, unless a file or session is specified, eg. vim -S session_file.vim.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
